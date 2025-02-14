@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Game</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffccd5;
+            font-family: Emilys Candy, Emilys Candy;
+        }
+        h1 {
+            color: #000000;
+        }
+        .heart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+        .heart {
+            width: 80px;
+            height: 80px;
+            background-color: #DE5D83;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .heart2 {
+            width: 80px;
+            height: 80px;
+            background-color: #FFD700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .heart:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day & Happy Valentines Day My Little Raccoon! ❤️🦝</h1>
+    <p>Click on any heart to reveal a message about how much I LOVE You!:)</p>
+    <p>The Golden Heart is special, so save that one for last:))</p>
+    <div class="heart-container">
+        <div class="heart" onclick="revealMessage(0)">💖</div>
+        <div class="heart" onclick="revealMessage(1)">💖</div>
+        <div class="heart" onclick="revealMessage(2)">💖</div>
+        <div class="heart" onclick="revealMessage(3)">💖</div>
+        <div class="heart" onclick="revealMessage(4)">💖</div>
+        <div class="heart" onclick="revealMessage(5)">💖</div>
+        <div class="heart" onclick="revealMessage(6)">💖</div>
+        <div class="heart" onclick="revealMessage(7)">💖</div>
+        <div class="heart" onclick="revealMessage(8)">💖</div>
+        <div class="heart" onclick="revealMessage(9)">💖</div>
+        <div class="heart" onclick="revealMessage(10)">💖</div>
+        <div class="heart" onclick="revealMessage(11)">💖</div>
+        <div class="heart" onclick="revealMessage(12)">💖</div>
+        <div class="heart" onclick="revealMessage(13)">💖</div>
+        <div class="heart" onclick="revealMessage(14)">💖</div>
+        <div class="heart" onclick="revealMessage(15)">💖</div>
+        <div class="heart" onclick="revealMessage(16)">💖</div>
+        <div class="heart" onclick="revealMessage(17)">💖</div>
+        <div class="heart" onclick="revealMessage(18)">💖</div>
+        <div class="heart" onclick="revealMessage(19)">💖</div>
+        <div class="heart" onclick="revealMessage(20)">💖</div>
+        <div class="heart" onclick="revealMessage(21)">💖</div>
+        <div class="heart" onclick="revealMessage(22)">💖</div>
+        <div class="heart" onclick="revealMessage(23)">💖</div>
+        <div class="heart" onclick="revealMessage(24)">💖</div>
+        <div class="heart" onclick="revealMessage(25)">💖</div>
+        <div class="heart" onclick="revealMessage(26)">💖</div>
+        <div class="heart" onclick="revealMessage(27)">💖</div>
+        <div class="heart" onclick="revealMessage(28)">💖</div>
+        <div class="heart" onclick="revealMessage(29)">💖</div>
+        <div class="heart2" onclick="revealMessage(30)">💖</div>
+    </div>
+    <p id="message" style="font-size: 20px; margin-top: 20px; color: #c9184a;"></p>
+    <script>
+        const messages = [
+            "You are my sunshine ☀️",
+            "I love you to the moon and back! 🌙",
+            "You make my heart skip a beat! 💓",
+            "I love you more and more everyday 🕰️"
+        ];
 
+        function revealMessage(index) {
+            document.getElementById("message").innerText = messages[index];
+        }
+    </script>
+</body>
+</html>
